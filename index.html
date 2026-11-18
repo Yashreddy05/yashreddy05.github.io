@@ -302,47 +302,64 @@ h3.title em{font-style:normal;color:var(--accent)}
 }
 .card a.proj-link:hover{color:#fff;transform:translateX(4px)}
 
-/* Contact Section */
-.contact{background:linear-gradient(180deg,#0b0a22 0%,#19124a 100%)}
-.contact .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0 40px}
-.contact .row a{
+/* Contact & Footer Section (Minimalist & Sleek) */
+.footer-section{
+  background:#09081e;
+  text-align:center;
+  padding:90px 20px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+}
+.footer-name{
+  font-size:clamp(2.2rem, 5vw, 3.2rem);
+  font-weight:800;
+  color:#ffffff;
+  letter-spacing:-0.02em;
+  margin-bottom:24px;
+}
+.footer-name span{
+  color:var(--accent);
+}
+.footer-socials{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  margin-bottom:26px;
+}
+.footer-socials a{
+  color:#9ca3af;
   display:inline-flex;
   align-items:center;
-  gap:8px;
-  padding:14px 30px;
-  border-radius:999px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  font-size:.95rem;
-  border:1px solid rgba(124, 92, 255, 0.4);
-  background:rgba(21, 19, 58, 0.8);
+  justify-content:center;
   transition:all .25s ease;
+  text-decoration:none;
 }
-.contact .row a:hover{
-  background:var(--accent);
-  border-color:var(--accent);
+.footer-socials a:hover{
+  color:#ffffff;
   transform:translateY(-3px);
-  box-shadow:0 8px 24px var(--accent-glow);
 }
-.contact .row a.primary-cta{
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
-  border:none;
-  box-shadow:0 4px 18px var(--accent-glow);
+.footer-copyright{
+  color:#71717a;
+  font-size:1.02rem;
+  font-weight:400;
+  margin-bottom:48px;
 }
-.contact-note{color:#9aa3cf;font-size:.92rem;max-width:500px;margin:0 auto}
-
-/* Footer */
-footer{
-  background:#070617;
-  color:#828ba8;
+.footer-divider{
+  width:100%;
+  max-width:960px;
+  height:1px;
+  background:rgba(255, 255, 255, 0.08);
+}
+.footer-bottom{
+  padding:28px 20px 36px;
+  color:#52525b;
+  font-size:.92rem;
   text-align:center;
-  padding:32px 6vw;
-  font-size:.88rem;
-  border-top:1px solid rgba(124,92,255,0.12);
+  width:100%;
 }
-footer a{color:var(--accent-light);text-decoration:none}
-footer a:hover{text-decoration:underline}
 
 /* Reveal Animations */
 .rv{opacity:0;transform:translateY(28px);transition:all .65s cubic-bezier(0.16, 1, 0.3, 1)}
@@ -641,31 +658,32 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="dark contact">
-  <div class="eyebrow rv"><span class="dot"></span> GET IN TOUCH</div>
-  <h3 class="title rv">Let’s <em>Connect</em></h3>
-  <p class="sub rv">
-    Interested in collaborating on GenAI applications, discussing agentic workflows, or exploring opportunities? Reach out anytime!
-  </p>
-  <div class="row">
-    <a class="primary-cta" href="mailto:yashwanthreddy.dev@gmail.com">
-      ✉️ Email Me
+<!-- Contact & Footer Section (Minimalist & Sleek) -->
+<footer id="contact" class="footer-section">
+  <div class="footer-name rv">Yashwanth<span style="color:#ef4444">.</span></div>
+  
+  <div class="footer-socials rv">
+    <a href="https://github.com/Yashreddy05" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+      </svg>
     </a>
-    <a href="https://github.com/Yashreddy05" target="_blank" rel="noopener">
-      🐙 GitHub Profile
+    <a href="https://www.linkedin.com/in/yashwanth-reddyy05/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+      </svg>
     </a>
-    <a href="https://linkedin.com/in/yashwanth-reddy" target="_blank" rel="noopener">
-      💼 LinkedIn
+    <a href="mailto:yashwanthreddyjakka05@gmail.com" aria-label="Email">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
     </a>
   </div>
-  <p class="contact-note">Based in Hyderabad, India · Available for high-impact AI Engineering roles</p>
-</section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2026 <strong>Yashwanth Reddy</strong>. Designed with modern indigo & violet aesthetic.</p>
-  <p style="margin-top:6px;font-size:.8rem;color:#6b7280">Built with semantic HTML5, CSS3 & Vanilla JavaScript · Fast, lightweight, zero bloated frameworks.</p>
+  <p class="footer-copyright rv">© 2026 Yashwanth Reddy</p>
+  
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">Designed & built with passion</div>
 </footer>
 
 <!-- Interactive Scripts -->
